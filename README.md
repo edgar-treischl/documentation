@@ -12,6 +12,7 @@ I am an R enthusiast with a broader view on data science topics such as data vis
   <a href="https://edgar-treischl.github.io/gist/" target="_blank"><img src="https://edgar-treischl.github.io/gist/logo.png" width="100" /></a>
 </p>
 
+This repository contains my personal documention. Feel free to have a look.
 <!--
 **edgar-treischl/edgar-treischl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

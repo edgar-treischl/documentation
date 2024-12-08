@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "R/scripts/cronR.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cronR"
+              "title": "README"
             }
           }
         ]
@@ -199,13 +199,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e268401104c64f8c",
+  "active": "a2b467f594117cec",
   "lastOpenFiles": [
+    "R/scripts/cronR.md",
     "R/scripts/barplot_hatching.md",
     "README.md",
     "SQL/Snippets.md",
     "R/scripts/text.md",
-    "R/scripts/cronR.md",
     "R/scripts/cronR.html",
     "R/scripts/Sozialer Aufstieg.md",
     "R/scripts/Credly.md",
