@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "fa0a4ccf39b57788",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d3e9431ce3e9460",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2b467f594117cec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "R/scripts/cronR.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cronR"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "202004544e0dab97",
+    "type": "split",
+    "children": [
+      {
+        "id": "93cb0e5cb4426d07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e268401104c64f8c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d40b1b5e594ef985",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "38395b2c178eed29",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0e6fe7e7eb84a642",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e8c3ebac8fd61da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9c425064c44a319",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "R/scripts/cronR.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for cronR"
+            }
+          },
+          {
+            "id": "623b8cc3c5b2dc7e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "R/scripts/cronR.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from cronR"
+            }
+          },
+          {
+            "id": "7616cd322270b1d6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b3c6bb3a855a99f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "R/scripts/cronR.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of cronR"
+            }
+          },
+          {
+            "id": "d96bbe5dcba53539",
+            "type": "leaf",
+            "state": {
+              "type": "r-environment-view",
+              "state": {},
+              "icon": "table",
+              "title": "R Environment"
+            }
+          },
+          {
+            "id": "3d542e27ecb2555e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "b342a84fb8667e47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "566e9d62a2a5761e",
+            "type": "leaf",
+            "state": {
+              "type": "r-help-view",
+              "state": {},
+              "icon": "info",
+              "title": "R Help"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "e268401104c64f8c",
+  "lastOpenFiles": [
+    "R/scripts/barplot_hatching.md",
+    "README.md",
+    "SQL/Snippets.md",
+    "R/scripts/text.md",
+    "R/scripts/cronR.md",
+    "R/scripts/cronR.html",
+    "R/scripts/Sozialer Aufstieg.md",
+    "R/scripts/Credly.md",
+    "R/scripts",
+    "R/index.md",
+    "R/Snippets.md",
+    "SQL",
+    "shell",
+    "R",
+    "plots"
+  ]
+}
