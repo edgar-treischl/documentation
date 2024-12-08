@@ -1,6 +1,6 @@
 __
 Example of Webscraping:
-- Download badges from [[Credly]]
+- Download badges from [[credly]]
 
 ### Extract R chunks from Obsedian
 
