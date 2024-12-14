@@ -1,4 +1,4 @@
-Store XML in Postgres
+Store XML Files in Postgres. Here is an example.
 
 ```sql
 CREATE TABLE lss_surveys (

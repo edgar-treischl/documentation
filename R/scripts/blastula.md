@@ -1,27 +1,45 @@
+#blastula
+
 ## Function template from MetaMaster
 
+Add a file as attachement
+
 ```r
-#Add file "MetaMasterMeta.xlsx"
-  metadf <- readxl::read_excel("excel.xlsx")
+metadf <- readxl::read_excel("excel.xlsx")
+```
 
-  #get date and time and add it to the subject
-  date <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
-  mailsubject <- paste("Update on bla", date)
+Get date and time and add it to the subject
 
-  #The mail template
-  file_path <- system.file("rmarkdown/templates/mail/skeleton/skeleton.Rmd", package = "MetaMaster")
-  file.copy(file_path, to = here::here("template_mail.Rmd"))
+```r
+date <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+mailsubject <- paste("Update on bla", date)
+```
 
-  #Build the email with the template
-  email <- blastula::render_email("template_mail.Rmd")|>
+Create a template and build email
+
+```r
+#The mail template
+file_path <- system.file("rmarkdown/templates/mail/skeleton/skeleton.Rmd", package = "MetaMaster")
+file.copy(file_path, to = here::here("template_mail.Rmd"))
+
+#Build the email with the template
+email <- blastula::render_email("template_mail.Rmd")|>
     blastula::add_attachment(file = "MetaMaster.xlsx")
+```
 
-  #Get the mail recipient and sender from the config file
-  get <- config::get(file = "config.yml")
-  report_from <- get$report_from
-  report_to <- get$report_to
+Get the mail recipient and sender from the config file
 
-  # Send the email with smtp_send
+```r
+#Get the mail recipient and sender from the config file
+get <- config::get(file = "config.yml")
+report_from <- get$report_from
+report_to <- get$report_to
+```
+
+Send the email with smtp_send
+
+```r
+# Send the email with smtp_send
   email |>
     blastula::smtp_send(
       to = report_to,
@@ -147,7 +165,5 @@ email %>%
 
 
 ```
-
-
 
 
