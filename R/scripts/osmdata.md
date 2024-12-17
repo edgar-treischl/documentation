@@ -1,3 +1,107 @@
+## Gunzenhausen
+
+```r
+# Load necessary libraries
+library(tidyverse)
+library(osmdata)
+library(ggplot2)
+library(showtext)
+
+
+# Add custom font for the map
+font_add_google(name = "Fraunces", family = "Fraunces")
+showtext_auto()
+
+
+# Fetching street data for Gunzenhausen, Bavaria
+small_streets <- getbb("Gunzenhausen, Bavaria, Germany") |>
+  opq() |>
+  add_osm_feature(key = "highway",
+                  value = c("residential", "living_street", "unclassified", "service", "footway")) |>
+  osmdata_sf()
+
+#Fetching medium and big streets
+med_streets <- getbb("Gunzenhausen, Bavaria, Germany") |>
+  opq() |>
+  add_osm_feature(key = "highway",
+                  value = c("secondary", "tertiary", "secondary_link", "tertiary_link")) |>
+  osmdata_sf()
+
+big_streets <- getbb("Gunzenhausen, Bavaria, Germany") |>
+  opq() |>
+  add_osm_feature(key = "highway",
+                  value = c("motorway", "primary", "motorway_link", "primary_link")) |>
+  osmdata_sf()
+
+# Fetching water data
+water <- getbb("Gunzenhausen, Bavaria, Germany") |>
+  opq() |>
+  add_osm_feature(key = "water", value = c("lake", "reservoir", "river", "wetland", "pond", "bay")) |>
+  osmdata_sf()
+
+# Fetching waterway data
+waterways <- getbb("Gunzenhausen, Bavaria, Germany") |>
+  opq() |>
+  add_osm_feature(key = "waterway", value = c("river", "stream", "canal", "ditch", "drain", "weir", "lock")) |>
+  osmdata_sf()
+
+
+# Example coordinates for a specific location in Gunzenhausen
+lat <- 49.121224641898735 # Latitude for 4QCJ+9F Gunzenhausen
+lon <- 10.781111423943116  # Longitude for 4QCJ+9F Gunzenhausen
+
+
+# Plotting the map
+ggplot() +
+  theme_minimal(base_family = "Fraunces") +
+  geom_sf(data = small_streets$osm_lines,
+          inherit.aes = FALSE,
+          color = "#495057",
+          size = .3,
+          alpha = .7) +
+  geom_sf(data = med_streets$osm_lines,
+          inherit.aes = FALSE,
+          color = "#343a40",
+          size = .3,
+          alpha = .7) +
+  geom_sf(data = big_streets$osm_lines,
+          inherit.aes = FALSE,
+          color = "#212529",
+          size = .3,
+          alpha = .5) +
+  geom_sf(data = water$osm_polygons,
+          color = "#0062A1",
+          fill = "#0062A1",
+          alpha = .5) +
+  geom_sf(data = waterways$osm_lines,
+          color = "#0062A1",
+          size = 1.5,
+          alpha = .7) +
+  coord_sf(xlim = c(10.69, 10.81),
+           ylim = c(49.09, 49.16),
+           expand = TRUE) +
+  geom_point(aes(x = lon, y = lat), color = "#e63946",
+             size = 2.5,
+             stroke = 1,
+             shape = 8) +
+  labs(
+    title = "91710 Gunzenhausen",
+    caption = "<span style='color:#e63946;'>*</span>here::here()",
+    x = "",
+    y = ""
+  )+
+  theme(text = element_text(color = "black"),
+        plot.margin = margin(10, 30, 10, 10),
+        plot.title = element_text(size = 44,
+                                  family = "Fraunces", hjust = .5, color = "#495057"),
+        plot.caption = ggtext::element_markdown(size = 16, hjust = 1, lineheight = 1.2)
+        )
+
+
+
+
+```
+
 
 ## New York
 

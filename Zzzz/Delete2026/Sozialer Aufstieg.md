@@ -1,7 +1,3 @@
-This script creates: 
-
-![[plot_6b86b273_2_20241207204036.jpg]]
-
 
 The code:
 
