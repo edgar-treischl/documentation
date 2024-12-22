@@ -21,3 +21,8 @@ echo "Welcome $name"
 echo -n "Congratulations! You just created and ran your first shell script "
 echo "using Bash on IBM Skills Network"
 ```
+
+
+```bash
+echo -n "bal"
+```

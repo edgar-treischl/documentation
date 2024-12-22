@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "336c0cf2d888837a",
+        "id": "44566da8162ecf13",
         "type": "tabs",
         "children": [
           {
-            "id": "e8a0dcdf6c53952e",
+            "id": "14a840c402e73388",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Kitchen/Spaghetti al limone.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Spaghetti al limone"
+            }
+          },
+          {
+            "id": "e55a1bc30fc42a24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Shiny Server Setup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Shiny Server Setup"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,43 +214,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8a0dcdf6c53952e",
+  "active": "e55a1bc30fc42a24",
   "lastOpenFiles": [
     "Untitled.md",
+    "Shiny Server Setup.md",
     "README.md",
-    "Zzzz/dinosaurus_animated.gif",
+    "R Studio.md",
+    "Kitchen/Spaghetti al limone.md",
+    "mastering-shiny-gh-pages/your-first-app.md",
+    "mastering-shiny-gh-pages/reactivity-demystifying.md",
+    "mastering-shiny-gh-pages/reactivity-intro.md",
+    "mastering-shiny-gh-pages/07-demystifying-reactivity.md",
+    "mastering-shiny-gh-pages/05-intro-to-reactivity.md",
+    "mastering-shiny-gh-pages/04-advanced-ui.md",
+    "mastering-shiny-gh-pages/01-getting-started.md",
+    "mastering-shiny-gh-pages/getting-started.md",
+    "mastering-shiny-gh-pages/basic-ui.md",
+    "mastering-shiny-gh-pages/basic-app.md",
+    "mastering-shiny-gh-pages/advanced-ui.md",
+    "mastering-shiny-gh-pages/03-basic-ui.md",
+    "mastering-shiny-gh-pages/02-your-first-app.md",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-sharing.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-search.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-fontsettings.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-bookdown.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/lunr.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/jquery.highlight.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/app.min.js",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/css/style.css",
+    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/css/plugin-table.css",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-54-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-53-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-51-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-50-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-43-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-42-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-3-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-1-1.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/ggplots-2.png",
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/ggplots-1.png",
+    "mastering-shiny-gh-pages/index.md",
+    "shell/Snippets.md",
+    "NGINX.md",
     "R/scripts/osmdata.md",
     "R/scripts/MetBrewer.md",
     "R/index.md",
-    "shell/Snippets.md",
-    "NGINX.md",
     "R/scripts/gganimate.md",
-    "Zzzz/Delete2026/Twitter.md",
-    "SQL/Snippets.md",
-    "Random/stuff.md",
-    "R/scripts/text.md",
-    "R/scripts/bslib.md",
-    "R/scripts/cronR.md",
-    "R/scripts/blastula.md",
-    "R/scripts/knn.md",
-    "Zzzz/Delete2026/Sozialer Aufstieg.md",
-    "Zzzz/Delete2026/ggradar.md",
-    "Zzzz/Delete2026/barplot_hatching.md",
-    "Zzzz",
-    "Neuer Ordner",
-    "R/scripts/credly.md",
-    "documentation.Rproj",
-    "NAMESPACE",
-    "DESCRIPTION",
-    "README.html",
-    "README.knit.md",
-    "README.Rmd",
-    "R/shiny/City View.md",
-    "R/scripts/simulate.md",
-    "Kitchen/Kartoffelsalat.md",
-    "Random",
-    "C",
-    "Kitchen",
-    "R/R/Blastula_Mail.md"
+    "Zzzz/Delete2026/Twitter.md"
   ]
 }

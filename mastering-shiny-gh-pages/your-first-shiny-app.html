@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Your first Shiny app | Mastering Shiny</title>
+  <meta name="description" content="The official guide to the Shiny web application framework for R." />
+  <meta name="generator" content="bookdown 0.11.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Your first Shiny app | Mastering Shiny" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="The official guide to the Shiny web application framework for R." />
+  <meta name="github-repo" content="jcheng5/shiny-book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Your first Shiny app | Mastering Shiny" />
+  
+  <meta name="twitter:description" content="The official guide to the Shiny web application framework for R." />
+  
+
+<meta name="author" content="Joe Cheng" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="before-we-begin.html">
+<link rel="next" href="basic-ui.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mastering Shiny</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the author</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="part"><span><b>Getting started</b></span></li>
+<li class="chapter" data-level="1" data-path="before-we-begin.html"><a href="before-we-begin.html"><i class="fa fa-check"></i><b>1</b> Before we begin</a><ul>
+<li class="chapter" data-level="1.1" data-path="before-we-begin.html"><a href="before-we-begin.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="" data-path="before-we-begin.html"><a href="before-we-begin.html#r"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="before-we-begin.html"><a href="before-we-begin.html#rstudio"><i class="fa fa-check"></i>RStudio</a></li>
+<li class="chapter" data-level="" data-path="before-we-begin.html"><a href="before-we-begin.html#shiny"><i class="fa fa-check"></i>Shiny</a></li>
+<li class="chapter" data-level="" data-path="before-we-begin.html"><a href="before-we-begin.html#other-r-packages"><i class="fa fa-check"></i>Other R packages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="before-we-begin.html"><a href="before-we-begin.html#cheat-sheet"><i class="fa fa-check"></i><b>1.2</b> Cheat sheet</a></li>
+<li class="chapter" data-level="1.3" data-path="before-we-begin.html"><a href="before-we-begin.html#if-you-get-stuck"><i class="fa fa-check"></i><b>1.3</b> If you get stuck</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html"><i class="fa fa-check"></i><b>2</b> Your first Shiny app</a><ul>
+<li class="chapter" data-level="2.1" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#create-app"><i class="fa fa-check"></i><b>2.2</b> Create app dir and file</a></li>
+<li class="chapter" data-level="2.3" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#running"><i class="fa fa-check"></i><b>2.3</b> Running and stopping</a></li>
+<li class="chapter" data-level="2.4" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#adding-ui"><i class="fa fa-check"></i><b>2.4</b> Adding UI controls</a></li>
+<li class="chapter" data-level="2.5" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#server-function"><i class="fa fa-check"></i><b>2.5</b> Adding behavior</a></li>
+<li class="chapter" data-level="2.6" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#reactive-expr"><i class="fa fa-check"></i><b>2.6</b> Reducing duplication with reactive expressions</a></li>
+<li class="chapter" data-level="2.7" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html#exercises"><i class="fa fa-check"></i><b>2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="basic-ui.html"><a href="basic-ui.html"><i class="fa fa-check"></i><b>3</b> Basic UI</a><ul>
+<li class="chapter" data-level="3.1" data-path="basic-ui.html"><a href="basic-ui.html#introduction-1"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="basic-ui.html"><a href="basic-ui.html#inputs"><i class="fa fa-check"></i><b>3.2</b> Inputs</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="basic-ui.html"><a href="basic-ui.html#common-structure"><i class="fa fa-check"></i><b>3.2.1</b> Common structure</a></li>
+<li class="chapter" data-level="3.2.2" data-path="basic-ui.html"><a href="basic-ui.html#free-text"><i class="fa fa-check"></i><b>3.2.2</b> Free text</a></li>
+<li class="chapter" data-level="3.2.3" data-path="basic-ui.html"><a href="basic-ui.html#numeric-inputs"><i class="fa fa-check"></i><b>3.2.3</b> Numeric inputs</a></li>
+<li class="chapter" data-level="3.2.4" data-path="basic-ui.html"><a href="basic-ui.html#dates"><i class="fa fa-check"></i><b>3.2.4</b> Dates</a></li>
+<li class="chapter" data-level="3.2.5" data-path="basic-ui.html"><a href="basic-ui.html#limited-choices"><i class="fa fa-check"></i><b>3.2.5</b> Limited choices</a></li>
+<li class="chapter" data-level="3.2.6" data-path="basic-ui.html"><a href="basic-ui.html#yesno-questions"><i class="fa fa-check"></i><b>3.2.6</b> Yes/no questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="basic-ui.html"><a href="basic-ui.html#outputs"><i class="fa fa-check"></i><b>3.3</b> Outputs</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="basic-ui.html"><a href="basic-ui.html#text"><i class="fa fa-check"></i><b>3.3.1</b> Text</a></li>
+<li class="chapter" data-level="3.3.2" data-path="basic-ui.html"><a href="basic-ui.html#tables"><i class="fa fa-check"></i><b>3.3.2</b> Tables</a></li>
+<li class="chapter" data-level="3.3.3" data-path="basic-ui.html"><a href="basic-ui.html#plots"><i class="fa fa-check"></i><b>3.3.3</b> Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="basic-ui.html"><a href="basic-ui.html#layout"><i class="fa fa-check"></i><b>3.4</b> Layouts</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="basic-ui.html"><a href="basic-ui.html#page-functions"><i class="fa fa-check"></i><b>3.4.1</b> Page functions</a></li>
+<li class="chapter" data-level="3.4.2" data-path="basic-ui.html"><a href="basic-ui.html#themes"><i class="fa fa-check"></i><b>3.4.2</b> Themes</a></li>
+<li class="chapter" data-level="3.4.3" data-path="basic-ui.html"><a href="basic-ui.html#under-the-hood"><i class="fa fa-check"></i><b>3.4.3</b> Under the hood</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="basic-ui.html"><a href="basic-ui.html#common-styles"><i class="fa fa-check"></i><b>3.5</b> Common styles</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="basic-ui.html"><a href="basic-ui.html#page-with-sidebar"><i class="fa fa-check"></i><b>3.5.1</b> Page with sidebar</a></li>
+<li class="chapter" data-level="3.5.2" data-path="basic-ui.html"><a href="basic-ui.html#multi-row"><i class="fa fa-check"></i><b>3.5.2</b> Multi-row</a></li>
+<li class="chapter" data-level="3.5.3" data-path="basic-ui.html"><a href="basic-ui.html#dashboard"><i class="fa fa-check"></i><b>3.5.3</b> Dashboard</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="reactivity-intro.html"><a href="reactivity-intro.html"><i class="fa fa-check"></i><b>4</b> Basic reactivity</a><ul>
+<li class="chapter" data-level="4.1" data-path="reactivity-intro.html"><a href="reactivity-intro.html#introduction-2"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="reactivity-intro.html"><a href="reactivity-intro.html#the-server-function"><i class="fa fa-check"></i><b>4.2</b> The server function</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="reactivity-intro.html"><a href="reactivity-intro.html#server-function-parameters"><i class="fa fa-check"></i><b>4.2.1</b> Server function parameters</a></li>
+<li class="chapter" data-level="4.2.2" data-path="reactivity-intro.html"><a href="reactivity-intro.html#input"><i class="fa fa-check"></i><b>4.2.2</b> Input</a></li>
+<li class="chapter" data-level="4.2.3" data-path="reactivity-intro.html"><a href="reactivity-intro.html#output"><i class="fa fa-check"></i><b>4.2.3</b> Output</a></li>
+<li class="chapter" data-level="4.2.4" data-path="reactivity-intro.html"><a href="reactivity-intro.html#imperative-vs.declarative"><i class="fa fa-check"></i><b>4.2.4</b> Imperative vs. declarative</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="reactivity-intro.html"><a href="reactivity-intro.html#inputs-and-outputs"><i class="fa fa-check"></i><b>4.3</b> Using inputs and outputs together</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="reactivity-intro.html"><a href="reactivity-intro.html#outputs-are-atomic"><i class="fa fa-check"></i><b>4.3.1</b> Outputs are atomic</a></li>
+<li class="chapter" data-level="4.3.2" data-path="reactivity-intro.html"><a href="reactivity-intro.html#side-effects"><i class="fa fa-check"></i><b>4.3.2</b> Side effects</a></li>
+<li class="chapter" data-level="4.3.3" data-path="reactivity-intro.html"><a href="reactivity-intro.html#reactive-expressions-intro"><i class="fa fa-check"></i><b>4.3.3</b> Reactive expressions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="reactivity-intro.html"><a href="reactivity-intro.html#controlling-effect-flow"><i class="fa fa-check"></i><b>4.4</b> Controlling effect flow</a></li>
+<li class="chapter" data-level="4.5" data-path="reactivity-intro.html"><a href="reactivity-intro.html#reactivity-roadblocks"><i class="fa fa-check"></i><b>4.5</b> Reactivity roadblocks</a></li>
+</ul></li>
+<li class="part"><span><b>Mastering user interfaces</b></span></li>
+<li class="chapter" data-level="5" data-path="advanced-ui.html"><a href="advanced-ui.html"><i class="fa fa-check"></i><b>5</b> Advanced UI</a><ul>
+<li class="chapter" data-level="5.1" data-path="advanced-ui.html"><a href="advanced-ui.html#introduction-3"><i class="fa fa-check"></i><b>5.1</b> Introduction</a><ul>
+<li class="chapter" data-level="" data-path="advanced-ui.html"><a href="advanced-ui.html#outline"><i class="fa fa-check"></i>Outline</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="advanced-ui.html"><a href="advanced-ui.html#introduction-to-html"><i class="fa fa-check"></i><b>5.2</b> HTML 101</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="advanced-ui.html"><a href="advanced-ui.html#inline-formatting-tags"><i class="fa fa-check"></i><b>5.2.1</b> Inline formatting tags</a></li>
+<li class="chapter" data-level="5.2.2" data-path="advanced-ui.html"><a href="advanced-ui.html#block-tags"><i class="fa fa-check"></i><b>5.2.2</b> Block tags</a></li>
+<li class="chapter" data-level="5.2.3" data-path="advanced-ui.html"><a href="advanced-ui.html#tags-with-attributes"><i class="fa fa-check"></i><b>5.2.3</b> Tags with attributes</a></li>
+<li class="chapter" data-level="5.2.4" data-path="advanced-ui.html"><a href="advanced-ui.html#parents-and-children"><i class="fa fa-check"></i><b>5.2.4</b> Parents and children</a></li>
+<li class="chapter" data-level="5.2.5" data-path="advanced-ui.html"><a href="advanced-ui.html#comments"><i class="fa fa-check"></i><b>5.2.5</b> Comments</a></li>
+<li class="chapter" data-level="5.2.6" data-path="advanced-ui.html"><a href="advanced-ui.html#escaping"><i class="fa fa-check"></i><b>5.2.6</b> Escaping</a></li>
+<li class="chapter" data-level="5.2.7" data-path="advanced-ui.html"><a href="advanced-ui.html#html-tag-vocabulary"><i class="fa fa-check"></i><b>5.2.7</b> HTML tag vocabulary</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="advanced-ui.html"><a href="advanced-ui.html#generating-html"><i class="fa fa-check"></i><b>5.3</b> Generating HTML with tag objects</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="advanced-ui.html"><a href="advanced-ui.html#using-functions-to-create-tags"><i class="fa fa-check"></i><b>5.3.1</b> Using functions to create tags</a></li>
+<li class="chapter" data-level="5.3.2" data-path="advanced-ui.html"><a href="advanced-ui.html#using-named-arguments-to-create-attributes"><i class="fa fa-check"></i><b>5.3.2</b> Using named arguments to create attributes</a></li>
+<li class="chapter" data-level="5.3.3" data-path="advanced-ui.html"><a href="advanced-ui.html#using-unnamed-arguments-to-create-children"><i class="fa fa-check"></i><b>5.3.3</b> Using unnamed arguments to create children</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="advanced-ui.html"><a href="advanced-ui.html#using-css"><i class="fa fa-check"></i><b>5.4</b> Customizing with CSS</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="advanced-ui.html"><a href="advanced-ui.html#introduction-to-css"><i class="fa fa-check"></i><b>5.4.1</b> Introduction to CSS</a></li>
+<li class="chapter" data-level="5.4.2" data-path="advanced-ui.html"><a href="advanced-ui.html#including-custom-css-in-shiny"><i class="fa fa-check"></i><b>5.4.2</b> Including custom CSS in Shiny</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="advanced-ui.html"><a href="advanced-ui.html#dependencies"><i class="fa fa-check"></i><b>5.5</b> Managing JavaScript/CSS dependencies</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="advanced-ui.html"><a href="advanced-ui.html#creating-html-dependency-objects"><i class="fa fa-check"></i><b>5.5.1</b> Creating HTML dependency objects</a></li>
+<li class="chapter" data-level="5.5.2" data-path="advanced-ui.html"><a href="advanced-ui.html#using-html-dependency-objects"><i class="fa fa-check"></i><b>5.5.2</b> Using HTML dependency objects</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>Mastering reactivity</b></span></li>
+<li class="chapter" data-level="6" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html"><i class="fa fa-check"></i><b>6</b> Understanding reactive programming</a><ul>
+<li class="chapter" data-level="6.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#introduction-4"><i class="fa fa-check"></i><b>6.1</b> Introduction</a><ul>
+<li class="chapter" data-level="" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#terminology-note"><i class="fa fa-check"></i>Terminology note</a></li>
+<li class="chapter" data-level="" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#outline-1"><i class="fa fa-check"></i>Outline</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#motivation"><i class="fa fa-check"></i><b>6.2</b> Introducing reactive programming</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#event-driven"><i class="fa fa-check"></i><b>6.2.1</b> The traditional approach: Event-driven programming</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#primitives"><i class="fa fa-check"></i><b>6.3</b> The building blocks of reactive programming</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reactive-values-values-that-change-over-time"><i class="fa fa-check"></i><b>6.3.1</b> Reactive values: values that change over time</a></li>
+<li class="chapter" data-level="6.3.2" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#observers-actions-that-execute-automatically"><i class="fa fa-check"></i><b>6.3.2</b> Observers: Actions that execute automatically</a></li>
+<li class="chapter" data-level="6.3.3" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reactive-expressions-smart-calculations"><i class="fa fa-check"></i><b>6.3.3</b> Reactive expressions: Smart calculations</a></li>
+<li class="chapter" data-level="6.3.4" data-path="basic-ui.html"><a href="basic-ui.html#outputs"><i class="fa fa-check"></i><b>6.3.4</b> Outputs</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#example"><i class="fa fa-check"></i><b>6.4</b> An example: CRAN download logs</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#what-are-the-inputs-for-the-user-to-provide"><i class="fa fa-check"></i><b>6.4.1</b> 1. What are the inputs for the user to provide?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#what-are-the-conceptual-steps-performed-in-the-script"><i class="fa fa-check"></i><b>6.4.2</b> 2. What are the conceptual “steps” performed in the script?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#for-each-of-the-steps-performed-is-it-a-calculation-an-output-or-a-task"><i class="fa fa-check"></i><b>6.4.3</b> 3. For each of the steps performed: is it a <em>calculation</em>, an <em>output</em>, or a <em>task</em>?</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#dependency-tracking"><i class="fa fa-check"></i><b>6.5</b> Demystifying dependency tracking</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#how-dependency-tracking-works"><i class="fa fa-check"></i><b>6.5.1</b> How dependency tracking works</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#step-through"><i class="fa fa-check"></i><b>6.6</b> A step-by-step tour of reactive execution</a><ul>
+<li class="chapter" data-level="6.6.1" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#a-session-begins"><i class="fa fa-check"></i><b>6.6.1</b> A session begins</a></li>
+<li class="chapter" data-level="6.6.2" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#execution-begins"><i class="fa fa-check"></i><b>6.6.2</b> Execution begins</a></li>
+<li class="chapter" data-level="6.6.3" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reading-a-reactive-expression"><i class="fa fa-check"></i><b>6.6.3</b> Reading a reactive expression</a></li>
+<li class="chapter" data-level="6.6.4" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reading-an-input"><i class="fa fa-check"></i><b>6.6.4</b> Reading an input</a></li>
+<li class="chapter" data-level="6.6.5" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reactive-expression-completes"><i class="fa fa-check"></i><b>6.6.5</b> Reactive expression completes</a></li>
+<li class="chapter" data-level="6.6.6" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#observer-completes"><i class="fa fa-check"></i><b>6.6.6</b> Observer completes</a></li>
+<li class="chapter" data-level="6.6.7" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#the-next-observer-executes"><i class="fa fa-check"></i><b>6.6.7</b> The next observer executes</a></li>
+<li class="chapter" data-level="6.6.8" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#execution-completes-outputs-flushed"><i class="fa fa-check"></i><b>6.6.8</b> Execution completes, outputs flushed</a></li>
+<li class="chapter" data-level="6.6.9" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#an-input-changes"><i class="fa fa-check"></i><b>6.6.9</b> An input changes</a></li>
+<li class="chapter" data-level="6.6.10" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#notifying-dependents"><i class="fa fa-check"></i><b>6.6.10</b> Notifying dependents</a></li>
+<li class="chapter" data-level="6.6.11" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#removing-relationships"><i class="fa fa-check"></i><b>6.6.11</b> Removing relationships</a></li>
+<li class="chapter" data-level="6.6.12" data-path="reactivity-mental-model.html"><a href="reactivity-mental-model.html#reexecution"><i class="fa fa-check"></i><b>6.6.12</b> Reexecution</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mastering Shiny</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="your-first-shiny-app" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Your first Shiny app</h1>
+<div id="introduction" class="section level2">
+<h2><span class="header-section-number">2.1</span> Introduction</h2>
+<p>In this chapter, we’ll create a simple Shiny app. Along the way, you’ll learn the basic structure of a Shiny app, and how to save and run Shiny apps using the RStudio IDE. You’ll also take your first steps into reactive programming.</p>
+<p>We’ll start by showing you the minimum boilerplate needed to get a Shiny app running, then you’ll learn how to run it, and how to stop it when you’re done. Next you’ll learn the two key components of every shiny app: the <strong>UI</strong> (short for user interface) which defines how your app <em>looks</em>, and the <strong>server function</strong> which defines how you app <em>works</em>. Shiny uses reactive programming to automatically update app outputs when the inputs change; we’ll finish off the chapter by learning the third important reactive component: reactive expressions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)</code></pre></div>
+</div>
+<div id="create-app" class="section level2">
+<h2><span class="header-section-number">2.2</span> Create app dir and file</h2>
+<p>There are several ways to create a Shiny app. The simplest is to create a new directory for your app, and put a single file called <code>app.R</code> in it. This <code>app.R</code> file will be used to tell Shiny both how your app should look, and how it should behave.</p>
+<p>(Tip: In RStudio IDE, you can easily create a new directory and <code>app.R</code> file in one step using <strong>File | New File | Shiny Web App</strong>.)</p>
+<p>Open up the <code>app.R</code> file and make its contents look like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)
+
+ui &lt;-<span class="st"> &quot;Hello, world!&quot;</span>
+
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+}
+
+<span class="kw">shinyApp</span>(ui, server)</code></pre></div>
+<p>This is a complete, if trivial, Shiny app. Looking closely at the code above, our <code>app.R</code> does four things:</p>
+<ol style="list-style-type: decimal">
+<li><p>Calls <code>library(shiny)</code> to load the shiny package.</p></li>
+<li><p>Defines the user interface (or <strong>UI</strong> for short) for our app. In this case, it’s nothing but the words “Hello, world!”.</p></li>
+<li><p>Specifies the behavior of our app by defining a <code>server</code> function. It’s currently empty, but we’ll be back to revisit this shortly.</p></li>
+<li><p>Runs <code>shinyApp(ui, server)</code> to construct a Shiny application object from the UI object and server function.</p></li>
+</ol>
+</div>
+<div id="running" class="section level2">
+<h2><span class="header-section-number">2.3</span> Running and stopping</h2>
+<p>Run this Shiny app in RStudio<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> now by pressing <code>Ctrl+Shift+Enter</code>, or by clicking the <strong>Run App</strong> button in the document toolbar. You should see a web application launch in a new window, with only the words “Hello, world!”:</p>
+<p><img src="images/basic-app/helloworld.png" width="735" /></p>
+<p>This is RStudio’s Shiny app window. From here, you can click “Open in Browser” to view the app in your system default web browser, which can be helpful for testing or debugging. If you prefer to always launch straight into your system default web browser, or RStudio’s Viewer pane, you can use the Run App button’s dropdown menu to choose one of those instead:</p>
+<p><img src="images/basic-app/run-app.png" width="200" /></p>
+<p>Before you close the app, go back to your main RStudio window and look at the R console. You’ll notice that the console says something like:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#&gt; Listening on http://127.0.0.1:3827</span></code></pre></div>
+<p>This is telling you the URL where your app can be found: 127.0.0.1 is a standard address that means “this computer” and 3827 is randomly assigned port number. You can enter that URL into any compatible<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> web browser to open another copy of your app.</p>
+<p>The second thing to notice is that R is busy: the R prompt isn’t visible, and the console toolbar displays a stop sign icon. While a Shiny app is running, it “blocks” the R console. This means that you can’t run new commands at the R console until after the Shiny app either stops of its own accord, or (much more commonly) is interrupted.</p>
+<p>Go ahead and stop your app using any one of these options:</p>
+<ul>
+<li><p>Click the stop sign icon on the R console toolbar.</p></li>
+<li><p>Press the <code>Esc</code> key (Note: the keyboard focus must be in either the RStudio console or editor).</p></li>
+<li><p>Close the Shiny app window.</p></li>
+<li><p>Non-RStudio users: However you normally interrupt running R code, e.g. <code>Ctrl+C</code> or <code>Esc</code>.</p></li>
+</ul>
+</div>
+<div id="adding-ui" class="section level2">
+<h2><span class="header-section-number">2.4</span> Adding UI controls</h2>
+<p>Next, we’ll add some inputs and outputs to our UI so it’s not <em>quite</em> so minimal. Change your <code>ui</code> object to look like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+  <span class="kw">selectInput</span>(<span class="st">&quot;dataset&quot;</span>, <span class="dt">label =</span> <span class="st">&quot;Dataset&quot;</span>,
+    <span class="dt">choices =</span> <span class="kw">ls</span>(<span class="st">&quot;package:datasets&quot;</span>)
+  ),
+  <span class="kw">verbatimTextOutput</span>(<span class="st">&quot;summary&quot;</span>),
+  <span class="kw">tableOutput</span>(<span class="st">&quot;table&quot;</span>)
+)</code></pre></div>
+<p>This example uses four functions we haven’t seen before.</p>
+<ul>
+<li><p><code>fluidPage()</code> is one of several <strong>layout functions</strong> which set up the basic visual structure of the page. You’ll learn more about them in Section <a href="basic-ui.html#layout">3.4</a></p></li>
+<li><p><code>selectInput()</code> is an <strong>input control</strong>, which lets the user interact with the app by providing a value. In this case, it’s a fancy select box with the title “Dataset” and lets you choose one of the built-in datasets that come with R. You’ll learn more about inputs in Section <a href="basic-ui.html#inputs">3.2</a>.</p></li>
+<li><p><code>verbatimTextOutput()</code> and <code>tableOutput()</code> are <strong>output controls</strong>, that tell Shiny <em>where</em> to put rendered output (we’ll get into the <em>how</em> in a moment). <code>verbatimTextOutput()</code> displays code and <code>tableOutput</code> displays tables. You’ll learn more about outputs in Section <a href="basic-ui.html#outputs">3.3</a>.</p></li>
+</ul>
+<p>Layout functions, inputs, and outputs are used for different purposes, but they fundamentally the same under the covers: they’re all just fancy ways to generate HTML, and if you call any of them outside of a shiny app, you’ll see HTML printed out at the console. Don’t be afraid to poke around to see how these various layouts and controls work under the hood. You’ll learn more of the details in Chapter <a href="advanced-ui.html#advanced-ui">5</a>.</p>
+<p>Go ahead and run the app again. You’ll now see a select box with a set of names, and very little else. We’ve defined the UI, but haven’t yet told Shiny what data to put in the outputs.</p>
+<p><img src="screenshots/basic-app/ui.png" width="800" /></p>
+</div>
+<div id="server-function" class="section level2">
+<h2><span class="header-section-number">2.5</span> Adding behavior</h2>
+<p>Next, we’ll bring the outputs to life by defining them in the server function.</p>
+<p>Shiny uses a <em>reactive programming</em> framework to make apps interactive. You’ll learn more about reactive programming in Chapter <a href="reactivity-intro.html#reactivity-intro">4</a>, but for now, just be aware that it often involves telling Shiny <em>how</em> to perform a computation, not ordering Shiny to actually go <em>do it</em>. It’s like the difference between giving someone a recipe instead of demanding that they go make you a sandwich.</p>
+<p>In this simple case, we’re going to tell Shiny how to fill in the <code>summary</code> and <code>table</code> outputs—we’re providing the “recipes” for those outputs. Replace your empty <code>server</code> function with this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+  output<span class="op">$</span>summary &lt;-<span class="st"> </span><span class="kw">renderPrint</span>({
+    dataset &lt;-<span class="st"> </span><span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>, <span class="dt">inherits =</span> <span class="ot">FALSE</span>)
+    <span class="kw">summary</span>(dataset)
+  })
+  
+  output<span class="op">$</span>table &lt;-<span class="st"> </span><span class="kw">renderTable</span>({
+    dataset &lt;-<span class="st"> </span><span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>, <span class="dt">inherits =</span> <span class="ot">FALSE</span>)
+    dataset
+  })
+}</code></pre></div>
+<p>Almost every output you’ll write in Shiny will follow this same pattern:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">output<span class="op">$</span>IDENTIFIER &lt;-<span class="st"> </span><span class="kw">renderTYPE</span>({
+  <span class="co"># Expression that generates whatever kind of output</span>
+  <span class="co"># renderTYPE expects</span>
+})</code></pre></div>
+<p>The left-hand side of the assignment operator (<code>&lt;-</code>), <code>output$IDENTIFIER</code>, indicates that you’re providing the recipe for the Shiny output with the matching ID. The right-hand side of the assignment specifies uses a specific <em>render function</em> to wrap a code block that you provide; in the example above, we use <code>renderPrint</code> and <code>renderTable</code> wrap our app-specific logic.</p>
+<p>Each <code>renderXXX</code> function is designed to work with a particular type of output that’s passed to an <code>xxxOutput</code> function. In this case, we’re using <code>renderPrint()</code> to capture and display the outut from <code>summary()</code> output, and <code>renderTable()</code> to display the actual data frame in a table.</p>
+<p>Run the app again and play around, watching what happens to the output when you change an input.</p>
+<p><img src="screenshots/basic-app/server.png" width="935" /></p>
+<p><strong>Outputs are <em>reactive</em> which means that Shiny automatically knows when to recalculate them.</strong> Because both of the rendering code blocks we wrote read <code>input$dataset</code>, whenever the value of <code>input$dataset</code> changes (i.e. the user changes their selection in the UI), both outputs will recalculate and update in the browser. Shiny takes care of this detail so that you don’t need to worry about it.</p>
+</div>
+<div id="reactive-expr" class="section level2">
+<h2><span class="header-section-number">2.6</span> Reducing duplication with reactive expressions</h2>
+<p>Even in this simple example, we have some code that’s duplicated: the line</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dataset &lt;-<span class="st"> </span><span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>, <span class="dt">inherits =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<p>is present in both outputs. In every kind of programming, it’s poor practice to have duplicated code; it can be computationally wasteful, and more importantly, it increases the difficulty of maintaining or debugging the code.</p>
+<p>In traditional R scripting, we use two techniques to deal with duplicated code: either we capture the value using a <em>variable</em> (if we only need to do the calculation once), or capture the computation itself using a <em>function</em> (if we need to perform the calculation multiple times, possibly based on different inputs).</p>
+<p>Unfortunately neither of these approaches work here (for resaons you’ll learn about in Section <a href="reactivity-intro.html#reactive-expressions-intro">4.3.3</a>), and we need new mechnaism: <strong>reactive expressions</strong>, created by wrapping a block of code with <code>reactive({...})</code>. You assign the reactive expression object to a variable, and <em>call the variable like a function</em> to retrieve its value.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Much better</span>
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+  dataset &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+    <span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>, <span class="dt">inherits =</span> <span class="ot">FALSE</span>)
+  })
+
+  output<span class="op">$</span>summary &lt;-<span class="st"> </span><span class="kw">renderPrint</span>({
+    <span class="kw">summary</span>(<span class="kw">dataset</span>())
+  })
+  
+  output<span class="op">$</span>table &lt;-<span class="st"> </span><span class="kw">renderTable</span>({
+    <span class="kw">dataset</span>()
+  })
+}</code></pre></div>
+<p>While it looks like you’re calling a function, a reactive expression has an important difference: it only runs its code the first time it is called (e.g. from <code>renderPrint()</code> and <code>renderTable()</code>), then caches the resulting value until it needs to be updated (for example, if <code>input$dataset</code> changed). Once that happens, the next time it’s called, it will execute its code again, and cache the resulting value, and so on.</p>
+<p>We’ll come back to reactive programming multiple times, but even armed with a cursory knowledge of inputs, outputs, and reactive expressions, it’s possible to build quite useful Shiny apps!</p>
+</div>
+<div id="exercises" class="section level2">
+<h2><span class="header-section-number">2.7</span> Exercises</h2>
+<p>TODO</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>If you’re not using RStudio, you can use <code>setwd()</code> to change the current working directory to the app dir, and call <code>shiny::runApp()</code> (or alternatively, don’t change the current working directory and pass the path to the app dir to <code>runApp()</code> as an argument).<a href="your-first-shiny-app.html#fnref1">↩</a></p></li>
+<li id="fn2"><p>Notably, Internet Explorer versions earlier than IE11 are not compatible when running Shiny directly from your R session. However, Shiny apps deployed on Shiny Server or ShinyApps.io can work with IE10 (earlier versions of IE are no longer supported).<a href="your-first-shiny-app.html#fnref2">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="before-we-begin.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="basic-ui.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/jcheng5/shiny-book/edit/master/basic-app.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["shiny-book.pdf", "shiny-book.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
