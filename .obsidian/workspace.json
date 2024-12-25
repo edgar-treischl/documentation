@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "shell/Snippets.md",
+                "file": "Run Shiny Run.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Snippets"
+              "title": "Backlinks for Run Shiny Run"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "shell/Snippets.md",
+                "file": "Run Shiny Run.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Snippets"
+              "title": "Outgoing links from Run Shiny Run"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "R/scripts/cronR.md"
+                "file": "Run Shiny Run.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of cronR"
+              "title": "Outline of Run Shiny Run"
             }
           },
           {
@@ -201,19 +201,19 @@
   },
   "active": "0cd79f5f3425361a",
   "lastOpenFiles": [
+    "README.md",
+    "NGINX.md",
+    "R Studio.md",
     "Shiny Server Setup.md",
+    "Run Shiny Run.md",
     "R/scripts/gganimate.md",
     "Zzzz/dinosaurus_animated.gif",
-    "Run Shiny Run.md",
     "Zzzz/shinyload.svg",
-    "README.md",
     "Kitchen/Spaghetti al limone.md",
     "exports/Run_Shiny_Run/Run_Shiny_Run_quarto.qmd",
     "exports/Run_Shiny_Run",
     "exports",
     "mastering-shiny-gh-pages/01-getting-started.md",
-    "R Studio.md",
-    "NGINX.md",
     "mastering-shiny-gh-pages/your-first-app.md",
     "mastering-shiny-gh-pages/reactivity-demystifying.md",
     "mastering-shiny-gh-pages/reactivity-intro.md",

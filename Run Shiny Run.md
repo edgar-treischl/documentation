@@ -1,4 +1,5 @@
 
+## Benchmark it
 
 To get a benchmark report for the app,  the [shinyloadtest](https://rstudio.github.io/shinyloadtest/) package and has three basic steps:
 
@@ -29,7 +30,7 @@ shinyloadtest_report(df, "report.html")
 ![shinyload](Zzzz/shinyload.svg)
 
 
-## Shinycannon
+### Shinycannon
 ### macOS
 
 1. Install [Java](https://www.java.com/en/download/)
@@ -38,7 +39,8 @@ shinyloadtest_report(df, "report.html")
 4. Run `shinycannon -h` to see help output, or `shinycannon [RECORDING-PATH] [APP-URL]` to generate load.
 
 
-Use a cache:
+## Use a cache:
+
 Simply pipe either the reactive or render* function that you want to cache:
 
 ```r
