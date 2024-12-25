@@ -1,4 +1,10 @@
+<div style="text-align: center;">
 
+</div><div style="text-align: left;">
+
+</div><div style="text-align: center;">
+
+</div>
 ## Benchmark it
 
 To get a benchmark report for the app,  the [shinyloadtest](https://rstudio.github.io/shinyloadtest/) package and has three basic steps:

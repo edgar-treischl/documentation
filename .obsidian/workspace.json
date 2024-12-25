@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5f05792c1c8d242a",
+        "id": "4527da17c2a8b62b",
         "type": "tabs",
         "children": [
           {
-            "id": "0cd79f5f3425361a",
+            "id": "0171549deb3e8da0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Run Shiny Run.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Run Shiny Run"
+              "title": "New tab"
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Run Shiny Run.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Run Shiny Run"
+              "title": "Backlinks"
             }
           },
           {
@@ -112,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Run Shiny Run.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Run Shiny Run"
+              "title": "Outgoing links"
             }
           },
           {
@@ -138,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Run Shiny Run.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Run Shiny Run"
+              "title": "Outline"
             }
           },
           {
@@ -199,17 +191,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0cd79f5f3425361a",
+  "active": "0171549deb3e8da0",
   "lastOpenFiles": [
+    "Kitchen/Kartoffelsalat.md",
+    "Kitchen/Spaghetti al limone.md",
+    "R/scripts/osmdata.md",
+    "Zzzz/Köln_Map.pdf",
+    "Zzzz/shinyload.svg",
+    "Zzzz/dinosaurus_animated.gif",
+    "Run Shiny Run.md",
     "README.md",
     "NGINX.md",
     "R Studio.md",
     "Shiny Server Setup.md",
-    "Run Shiny Run.md",
     "R/scripts/gganimate.md",
-    "Zzzz/dinosaurus_animated.gif",
-    "Zzzz/shinyload.svg",
-    "Kitchen/Spaghetti al limone.md",
     "exports/Run_Shiny_Run/Run_Shiny_Run_quarto.qmd",
     "exports/Run_Shiny_Run",
     "exports",
@@ -232,7 +227,6 @@
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-fontsettings.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-bookdown.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/lunr.js",
-    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/jquery.highlight.js",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-54-1.png",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-53-1.png",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-51-1.png",
@@ -243,7 +237,6 @@
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-1-1.png",
     "mastering-shiny-gh-pages/index.md",
     "shell/Snippets.md",
-    "R/scripts/osmdata.md",
     "R/scripts/MetBrewer.md",
     "R/index.md"
   ]
