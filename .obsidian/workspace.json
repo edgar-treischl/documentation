@@ -11,14 +11,12 @@
             "id": "5a94e55a9a3aea83",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Kitchen/Tortellini alla Panna.md",
-                "mode": "source",
-                "source": false
+                "file": "Zzzz/shinyload.svg"
               },
-              "icon": "lucide-file",
-              "title": "Tortellini alla Panna"
+              "icon": "lucide-image",
+              "title": "shinyload"
             }
           }
         ]
@@ -199,16 +197,16 @@
   },
   "active": "5a94e55a9a3aea83",
   "lastOpenFiles": [
+    "Zzzz/Köln_Map.pdf",
+    "Zzzz/dinosaurus_animated.gif",
     "Kitchen/Spaghetti al limone.md",
+    "Kitchen/Kartoffelsalat.md",
+    "Kitchen/Caipirinha Bowle.md",
     "Kitchen/Tortellini alla Panna.md",
     "Kitchen/Zzz",
-    "Zzzz/dinosaurus_animated.gif",
-    "Zzzz/Köln_Map.pdf",
     "Zzzz/shinyload.svg",
-    "Zzzz/spaghetti_al_limone.jpeg",
+    "Kitchen/Zzz/spaghetti_al_limone.jpeg",
     "Kitchen/Zzz/tortellini.png",
-    "Kitchen/Caipirinha Bowle.md",
-    "Kitchen/Kartoffelsalat.md",
     "Zzzz/test.jpeg",
     "Zzzz/image.jpeg.webp",
     "Zzzz/Bildschirmfoto 2024-12-31 um 15.34.45.png",

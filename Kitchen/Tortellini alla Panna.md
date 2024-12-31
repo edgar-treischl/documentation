@@ -14,7 +14,8 @@
 - 50 g geriebener Parmesan
 
 
-1. Tortellini nach Packungsangabe kochen. Schinken klein schneiden.
-2. Butter in einer Pfanne erhitzen und den Schinken leicht anbraten. Mit der Hälfte der Sahne ablöschen und bei geringer Hitze köcheln lassen.
-3. Den Rest der Sahne in einer Schüssel mit dem Eigelb, Parmesan, Salz, Pfeffer und Muskat verrühren.
-4. Die Sauce zusammen mit den Tortellini zu dem Schinken in die Pfanne geben.  Alles für ca. 2 Minuten köcheln lassen, bis eine dickflüssige Sauce entsteht.
+1. Tortellini nach Packungsangabe kochen. 
+2. Schinken klein schneiden.
+3. Butter in einer Pfanne erhitzen und den Schinken leicht anbraten. Mit der Hälfte der Sahne ablöschen und bei geringer Hitze köcheln lassen.
+4. Den Rest der Sahne in einer Schüssel mit dem Eigelb, Parmesan, Salz, Pfeffer und Muskat verrühren.
+5. Die Sauce zusammen mit den Tortellini zu dem Schinken in die Pfanne geben.  Alles für ca. 2 Minuten köcheln lassen, bis eine dickflüssige Sauce entsteht.

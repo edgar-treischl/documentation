@@ -1,5 +1,5 @@
 
-![Tortellini](Zzzz/spaghetti_al_limone.jpeg)
+![Tortellini](Zzz/spaghetti_al_limone.jpeg)
 
 ### Zutaten (Vier Personen):
 
