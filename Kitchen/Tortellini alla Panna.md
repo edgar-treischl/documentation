@@ -1,4 +1,4 @@
-![Tortellini](Zzzz/tortellini.png)
+![Tortellini](tortellini.png)
 
 
 ### Zutaten
