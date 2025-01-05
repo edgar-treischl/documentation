@@ -1,5 +1,5 @@
 __
-Example of Webscraping:
+Example of Webscraping :
 - Download badges from [[credly]]
 
 ### Extract R chunks from Obsedian

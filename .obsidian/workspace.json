@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "34511849531c70ff",
+        "id": "5d264070f5f57d31",
         "type": "tabs",
         "children": [
           {
-            "id": "5a94e55a9a3aea83",
+            "id": "38d94396ef7289e1",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Zzzz/shinyload.svg"
+                "file": "Kitchen/Tortellini alla Panna.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "shinyload"
+              "icon": "lucide-file",
+              "title": "Tortellini alla Panna"
             }
           }
         ]
@@ -195,8 +197,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5a94e55a9a3aea83",
+  "active": "38d94396ef7289e1",
   "lastOpenFiles": [
+    "R/index.md",
+    "Shiny Server Setup.md",
+    "Run Shiny Run.md",
+    "README.md",
     "Zzzz/Köln_Map.pdf",
     "Zzzz/dinosaurus_animated.gif",
     "Kitchen/Spaghetti al limone.md",
@@ -210,13 +216,10 @@
     "Zzzz/test.jpeg",
     "Zzzz/image.jpeg.webp",
     "Zzzz/Bildschirmfoto 2024-12-31 um 15.34.45.png",
-    "Shiny Server Setup.md",
-    "Run Shiny Run.md",
     "NGINX.md",
     "Untitled.canvas",
     "2024-12-25.md",
     "R/scripts/osmdata.md",
-    "README.md",
     "R Studio.md",
     "R/scripts/gganimate.md",
     "exports/Run_Shiny_Run/Run_Shiny_Run_quarto.qmd",
