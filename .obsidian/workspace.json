@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0e18832e7805c7a6",
+        "id": "b4cc294a2db2caca",
         "type": "tabs",
         "children": [
           {
-            "id": "a57d988e44a32425",
+            "id": "56c52a008e6b319e",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
                 "file": "README.md",
-                "staged": false
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (README)"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -196,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a57d988e44a32425",
+  "active": "56c52a008e6b319e",
   "lastOpenFiles": [
     "README.md",
     "Kitchen/Tortellini alla Panna.md",
