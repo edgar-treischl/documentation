@@ -13,6 +13,9 @@ I am an R enthusiast with a broader view on data science topics such as data vis
 </p>
 
 This repository contains my personal documention. Feel free to have a look.
+
+[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
+
 <!--
 **edgar-treischl/edgar-treischl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
