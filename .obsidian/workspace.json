@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ce5e748ba7a2bd9d",
+        "id": "75dc74142880c072",
         "type": "tabs",
         "children": [
           {
-            "id": "001afc1f7da0be73",
+            "id": "47c735fc48220e13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Shiny.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Shiny"
+              "title": "New tab"
             }
           }
         ]
@@ -197,41 +193,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "001afc1f7da0be73",
+  "active": "47c735fc48220e13",
   "lastOpenFiles": [
-    "Docker/Shiny.md",
-    "R/shiny/City View.md",
-    "Untitled.md",
+    "Kitchen/Spaghetti al limone.md",
+    "Kitchen/Tortellini alla Panna.md",
+    "R/scripts/osmdata.md",
+    "R/scripts/Palmer penguins rain.md",
+    "R/scripts/gganimate.md",
     "Shiny Server Setup.md",
+    "Untitled.md",
+    "Zzzz/dinosaurus_animated.gif",
+    "Zzzz/shinyload.svg",
+    "Zzzz/Köln_Map.pdf",
+    "Zzzz/Delete2026/barplot_hatching.md",
+    "Zzzz/Delete2026/ggradar.md",
+    "Kitchen/Zzz/tortellini.png",
+    "Kitchen/Zzz/spaghetti_al_limone.png",
+    "Docker/Shiny.md",
+    "Zzzz/Delete2026/Twitter.md",
+    "Kitchen/Kartoffelsalat.md",
+    "Kitchen/Zzz/Bildschirmfoto 2025-03-16 um 10.12.33.png",
+    "Kitchen/Caipirinha Bowle.md",
+    "shell/Snippets.md",
+    "R/shiny/City View.md",
     "Run Shiny Run.md",
     "Docker",
     "R/index.md",
     "R/Snippets.md",
-    "shell/Snippets.md",
     "README.md",
     "R Studio.md",
     "NGINX.md",
-    "R/scripts/Palmer penguins rain.md",
     "R/scripts/text.md",
     "R/scripts/simulate.md",
-    "R/scripts/osmdata.md",
     "R/scripts/MetBrewer.md",
     "R/scripts/knn.md",
-    "R/scripts/gganimate.md",
-    "R/scripts/cronR.md",
-    "R/scripts/credly.md",
-    "R/scripts/bslib.md",
-    "R/scripts/blastula.md",
-    "Random/stuff.md",
-    "Kitchen/Tortellini alla Panna.md",
-    "Zzzz/Köln_Map.pdf",
-    "Zzzz/dinosaurus_animated.gif",
-    "Kitchen/Spaghetti al limone.md",
-    "Kitchen/Kartoffelsalat.md",
     "Kitchen/Zzz",
-    "Zzzz/shinyload.svg",
     "Kitchen/Zzz/spaghetti_al_limone.jpeg",
-    "Kitchen/Zzz/tortellini.png",
     "Zzzz/test.jpeg",
     "Zzzz/image.jpeg.webp",
     "Zzzz/Bildschirmfoto 2024-12-31 um 15.34.45.png",
@@ -243,8 +240,6 @@
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-sharing.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-search.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-fontsettings.js",
-    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-54-1.png",
-    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-53-1.png",
-    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-51-1.png"
+    "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-54-1.png"
   ]
 }
