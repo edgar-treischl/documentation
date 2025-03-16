@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9d578d1ec1e23cfd",
+        "id": "ce5e748ba7a2bd9d",
         "type": "tabs",
         "children": [
           {
-            "id": "25da9ba4c9c85212",
+            "id": "001afc1f7da0be73",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Shiny.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Shiny"
             }
           }
         ]
@@ -193,13 +197,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d542e27ecb2555e",
+  "active": "001afc1f7da0be73",
   "lastOpenFiles": [
-    "R/scripts/Palmer penguins rain.md",
-    "README.md",
+    "Docker/Shiny.md",
+    "R/shiny/City View.md",
     "Untitled.md",
     "Shiny Server Setup.md",
     "Run Shiny Run.md",
+    "Docker",
+    "R/index.md",
+    "R/Snippets.md",
+    "shell/Snippets.md",
+    "README.md",
+    "R Studio.md",
+    "NGINX.md",
+    "R/scripts/Palmer penguins rain.md",
     "R/scripts/text.md",
     "R/scripts/simulate.md",
     "R/scripts/osmdata.md",
@@ -212,12 +224,10 @@
     "R/scripts/blastula.md",
     "Random/stuff.md",
     "Kitchen/Tortellini alla Panna.md",
-    "R/index.md",
     "Zzzz/Köln_Map.pdf",
     "Zzzz/dinosaurus_animated.gif",
     "Kitchen/Spaghetti al limone.md",
     "Kitchen/Kartoffelsalat.md",
-    "Kitchen/Caipirinha Bowle.md",
     "Kitchen/Zzz",
     "Zzzz/shinyload.svg",
     "Kitchen/Zzz/spaghetti_al_limone.jpeg",
@@ -225,20 +235,14 @@
     "Zzzz/test.jpeg",
     "Zzzz/image.jpeg.webp",
     "Zzzz/Bildschirmfoto 2024-12-31 um 15.34.45.png",
-    "NGINX.md",
     "Untitled.canvas",
-    "2024-12-25.md",
-    "R Studio.md",
     "exports/Run_Shiny_Run/Run_Shiny_Run_quarto.qmd",
     "exports/Run_Shiny_Run",
     "exports",
-    "mastering-shiny-gh-pages/01-getting-started.md",
-    "mastering-shiny-gh-pages/your-first-app.md",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-sharing.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-search.js",
     "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-fontsettings.js",
-    "mastering-shiny-gh-pages/libs/gitbook-2.6.7/js/plugin-bookdown.js",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-54-1.png",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-53-1.png",
     "mastering-shiny-gh-pages/shiny-book_files/figure-html/unnamed-chunk-51-1.png"
