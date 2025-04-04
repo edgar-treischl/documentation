@@ -1,1 +1,0 @@
-ggbeeswarm, ggbump, ggalluvial, ggridges, ggcorrplot, ggmosaic, ggradar, ggwordcloud

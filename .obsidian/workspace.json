@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "75dc74142880c072",
+        "id": "437166aa90274383",
         "type": "tabs",
         "children": [
           {
-            "id": "47c735fc48220e13",
+            "id": "7604cc6b865ad4cb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -48,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,40 +195,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47c735fc48220e13",
+  "active": "7604cc6b865ad4cb",
   "lastOpenFiles": [
+    "Normalization.md",
+    "Team DB.md",
+    "R/scripts/bslib.md",
+    "Kitchen/Zzz/spaghetti_al_limone.png",
+    "Plumber.md",
+    "Shiny Server Setup.md",
+    "Run Shiny Run.md",
+    "README.md",
+    "R Studio.md",
+    "NGINX.md",
+    "R/scripts/Sodium.md",
+    "Docker/Shiny.md",
+    "R/shiny/City View.md",
+    "R/index.md",
+    "R/Snippets.md",
+    "Random/stuff.md",
+    "shell/Snippets.md",
+    "Zzzz/Delete2026/Twitter.md",
+    "Zzzz/Delete2026/Sozialer Aufstieg.md",
+    "Zzzz/Delete2026/ggradar.md",
+    "Zzzz/Delete2026/barplot_hatching.md",
     "Kitchen/Spaghetti al limone.md",
     "Kitchen/Tortellini alla Panna.md",
     "R/scripts/osmdata.md",
     "R/scripts/Palmer penguins rain.md",
     "R/scripts/gganimate.md",
-    "Shiny Server Setup.md",
-    "Untitled.md",
     "Zzzz/dinosaurus_animated.gif",
     "Zzzz/shinyload.svg",
     "Zzzz/Köln_Map.pdf",
-    "Zzzz/Delete2026/barplot_hatching.md",
-    "Zzzz/Delete2026/ggradar.md",
     "Kitchen/Zzz/tortellini.png",
-    "Kitchen/Zzz/spaghetti_al_limone.png",
-    "Docker/Shiny.md",
-    "Zzzz/Delete2026/Twitter.md",
     "Kitchen/Kartoffelsalat.md",
     "Kitchen/Zzz/Bildschirmfoto 2025-03-16 um 10.12.33.png",
-    "Kitchen/Caipirinha Bowle.md",
-    "shell/Snippets.md",
-    "R/shiny/City View.md",
-    "Run Shiny Run.md",
     "Docker",
-    "R/index.md",
-    "R/Snippets.md",
-    "README.md",
-    "R Studio.md",
-    "NGINX.md",
-    "R/scripts/text.md",
-    "R/scripts/simulate.md",
-    "R/scripts/MetBrewer.md",
-    "R/scripts/knn.md",
     "Kitchen/Zzz",
     "Kitchen/Zzz/spaghetti_al_limone.jpeg",
     "Zzzz/test.jpeg",
