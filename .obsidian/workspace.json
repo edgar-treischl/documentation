@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "437166aa90274383",
+        "id": "c239c49fedda544e",
         "type": "tabs",
         "children": [
           {
-            "id": "7604cc6b865ad4cb",
+            "id": "e531539d9b4b5cf3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "reticulate.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "reticulate"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,12 +198,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7604cc6b865ad4cb",
+  "active": "e531539d9b4b5cf3",
   "lastOpenFiles": [
+    "reticulate.md",
+    "R/scripts/blastula.md",
+    "Kitchen/Zzz/spaghetti_al_limone.png",
     "Normalization.md",
     "Team DB.md",
     "R/scripts/bslib.md",
-    "Kitchen/Zzz/spaghetti_al_limone.png",
     "Plumber.md",
     "Shiny Server Setup.md",
     "Run Shiny Run.md",
@@ -222,12 +227,10 @@
     "Kitchen/Tortellini alla Panna.md",
     "R/scripts/osmdata.md",
     "R/scripts/Palmer penguins rain.md",
-    "R/scripts/gganimate.md",
     "Zzzz/dinosaurus_animated.gif",
     "Zzzz/shinyload.svg",
     "Zzzz/Köln_Map.pdf",
     "Kitchen/Zzz/tortellini.png",
-    "Kitchen/Kartoffelsalat.md",
     "Kitchen/Zzz/Bildschirmfoto 2025-03-16 um 10.12.33.png",
     "Docker",
     "Kitchen/Zzz",
